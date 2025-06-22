@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .blog{
+            border: 2px solid rgb(222, 218, 218);
+            padding: 20px;
+        }
+        input,textarea,#msg{
+            padding: 10px;
+        }
+        #btn{
+            width: 100px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        table,tr,th,td{
+            border: 2px solid gray;
+            padding: 10px;
+        }
+        
+    </style>
+    <script src="todo.js"></script>
+</head>
+<body>
+    <div class="blog">
+        <h2>Notes App</h2>
+        <form action="" id="form">
+            <input type="text" placeholder="Title" id="title"><br><br>
+            <textarea name="" id="ta" rows="5" cols="30" placeholder="Your Blog"></textarea><br><br>
+            <input type="submit" value="Submit" id="btn" onclick="Submit(event)">
+        </form>        
+    </div>
+    <div id="msg">
+    </div>
+    <div class="table">
+        <table id="table">
+            <tr>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
